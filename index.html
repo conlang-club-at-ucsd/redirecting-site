@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redirecting to Conlang Club @ UCSD…</title>
+<meta name="description" content="This page has moved to conlangatucsd.com. Redirecting…">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://conlangatucsd.com/">
+<meta http-equiv="refresh" content="0; url=https://conlangatucsd.com/">
+<meta property="og:title" content="Conlang Club @ UCSD has moved">
+<meta property="og:description" content="Redirecting to https://conlangatucsd.com/">
+<meta property="og:url" content="https://conlangatucsd.com/">
+<script>
+(function () {
+  var TARGET = "https://conlangatucsd.com";
+  try {
+    var dest = TARGET + window.location.pathname + window.location.search + window.location.hash;
+    // normalize: if this file is served as /index.html, prefer the directory form
+    dest = dest.replace(/\/index\.html([?#]|$)/, "/$1");
+    if (dest !== window.location.href) window.location.replace(dest);
+    else window.location.replace(TARGET + "/");
+  } catch (e) {
+    window.location.href = TARGET + "/";
+  }
+})();
+</script>
+<style>
+  body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;display:grid;place-items:center;min-height:100vh;margin:0;background:#FFF6E7;color:#17110f}
+  main{text-align:center;padding:24px;max-width:36ch}
+  a{color:#4b2fb3}
+</style>
+</head>
+<body>
+<main>
+  <h1>We've moved</h1>
+  <p>Redirecting to <a href="https://conlangatucsd.com/">conlangatucsd.com</a>…</p>
+  <p><a id="manual" href="https://conlangatucsd.com/">Click here if you are not redirected</a>.</p>
+  <noscript><p>JavaScript is off — use the link above.</p></noscript>
+</main>
+<script>
+(function () {
+  try {
+    var a = document.getElementById("manual");
+    if (a) a.href = "https://conlangatucsd.com" + window.location.pathname + window.location.search + window.location.hash;
+  } catch (e) {}
+})();
+</script>
+</body>
+</html>
